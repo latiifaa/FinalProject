@@ -207,27 +207,21 @@
 }
 
 #text{
+    margin: 250px;
     position: absolute;
     font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: white;
-    /* transform: translate(-50%,-50%); */
-    /* -ms-transform: translate(-50%,-50%); */
+  
 }
 
 
 .text{
-    background-color: red;   
+    margin-top: 60px;
+    margin-left: 450px;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color:#001845;
-    font-size: 100px;
+    font-size: 300px;
+
 }
 
 .List{
