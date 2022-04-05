@@ -1,0 +1,258 @@
+
+
+.animation {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.area{
+    position: absolute;
+    z-index: -1;
+    background: #979DAC; 
+    position: absolute;
+    width: 100%;
+    height:120vh;
+}
+
+.circles{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background:#e7e7e746;
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+/* #law{
+    display: none;
+    position:absolute;
+    top: 200px;
+}
+#CE {
+    display: none;
+    position: absolute;
+    top: 200px;
+} */
+
+/* .box {
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+
+/* DROPDOWN */
+/* .dropbtn {
+ background-color: #000000;
+ color: white;
+ padding: 16px;
+ font-size: 30px;
+ border: none;
+ cursor: pointer;
+ border-radius: 15px;
+} */
+
+
+/*law table */
+/* #lawNote {
+    font-size: large;
+    margin-top: 40px;
+    border-collapse: collapse;
+    width: 100%;
+    display: none ;
+    text-align: center;
+    z-index:1 ;
+}
+
+#lawNote td, #lawNote th {
+    border: 3px solid rgb(24, 20, 82);
+    padding: 8px;
+}
+
+#lawNote th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #646b79;
+    color: white;
+}
+#lawNote button {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: larger;
+    border: 0px solid #ffffff;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+}
+
+#lawNote button:hover {
+    background-color: #020350;
+    color: white;
+    text-decoration: underline;
+}  */
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3e4146ce;
+    z-index: 2;
+}
+
+#text{
+    position: absolute;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    /* transform: translate(-50%,-50%); */
+    /* -ms-transform: translate(-50%,-50%); */
+}
+
+
+.text{
+    background-color: red;   
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#001845;
+    font-size: 100px;
+}
+
+.List{
+    margin-top: 40px;
+    background-color: #6e0d0d;
+    color: aliceblue;
+    width:250px;
+    height: 250px;
+    border-radius: 25px; 
+    background-color: rgba(14, 13, 13, 0.63);
+    text-align: center; 
+    
+}
+
+.List:hover, .List:focus {
+    background-color: #242424;
+}
+
+.box {
+    position: absolute;
+    height: 600px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+} 

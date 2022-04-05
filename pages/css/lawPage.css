@@ -1,0 +1,123 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 18%;
+    background-color: #020350;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  li a {
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #6e6e6ebe;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgba(109, 109, 109, 0.658);
+    color: white;
+  }
+
+
+.cardBox {
+    /* height: 450px;
+    width: 900px; */
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:  center;
+    justify-content: space-evenly;
+    z-index: -1;
+
+}
+#one{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:  center;
+    justify-content: space-evenly;
+}
+
+#two ,#three, #four{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:  center;
+    justify-content: space-evenly;
+}
+
+.line1 {
+    background-color: white;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;    
+    margin-top: 50px;
+}
+
+.line2 {
+    background-color: white;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+ 
+.card button {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: larger;
+    border: 0px solid #ffffff;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+}
+.back button:hover {
+    background-color: #020350;
+    color: white;
+    text-decoration: underline;
+}
+.card {    
+    height: 200px;
+    width: 150px;
+    border-radius:15px;
+    margin: 25px; 
+    box-shadow: 10px 10px 9px rgb(37, 37, 37);
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    border-radius: 15px;
+    box-shadow: 10px 10px 9px rgba(88, 88, 88, 0.637);
+    transform: rotateY(180deg);
+}
+.front {
+    padding-top: 20px;
+    font-size: large;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: perspective(600px) rotateY(0deg);
+    position:absolute;
+}
+.front p {
+    padding-top: 20px;
+}
+
+.back {
+    backface-visibility: hidden;
+    text-align:center;
+    transform: perspective(600px) rotateY(180deg);
+   padding-top: 20px;
+}
