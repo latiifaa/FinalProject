@@ -121,7 +121,8 @@
 
 .box{
     position: absolute;
-    margin-left: 20px;
+    margin-left: 70px;
+    margin-top: 70px;
 }
 
 #vid{
@@ -162,7 +163,7 @@
   }
 /* info */
 #college1, #college2, #college3, #college4  {
-    background-color: #5C677D;
+    background-color: #959daf;
     display: none;
 }
 h1{
